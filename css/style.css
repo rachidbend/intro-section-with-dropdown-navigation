@@ -558,7 +558,7 @@ body {
     margin-left: 2rem;
   }
 
-  .nav-list li:hover .nav-list-nested {
+  .nav-nested-open {
     opacity: 1;
     visibility: visible;
   }
@@ -571,8 +571,7 @@ body {
     left: 0;
   }
 
-  .nav-list li:hover .nav-list-nested,
-  .nav-list li:visited .nav-list-nested {
+  .nav-nested-open {
     display: block;
   }
 
