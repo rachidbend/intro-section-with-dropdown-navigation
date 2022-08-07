@@ -7,6 +7,7 @@ const headerEl = document.querySelector(".header");
 
 navBtnEl.addEventListener("click", (e) => {
   headerEl.classList.toggle("nav-open");
+  headerEl.classList.toggle("sticky");
 });
 
 // nav-nested-open

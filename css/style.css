@@ -403,6 +403,7 @@ body {
   .header {
     padding: 3rem 2rem;
     justify-content: space-between;
+    position: relative;
   }
 
   .mobile-nav {
@@ -625,5 +626,20 @@ body {
     display: block;
     width: 100%;
     transition: all 675ms;
+  }
+
+  /* making mobile nav sticky */
+  .sticky .mobile-nav {
+    position: fixed;
+  }
+
+  .sticky .btn-mobile-nav {
+    position: fixed;
+    right: 2rem;
+    transform: translateY(0.5rem);
+  }
+
+  .sticky .nav-background {
+    position: fixed;
   }
 }
