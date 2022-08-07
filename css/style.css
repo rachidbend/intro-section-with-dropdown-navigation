@@ -542,4 +542,53 @@ body {
     font-size: 1.8rem;
     padding: 1.6rem 2rem;
   }
+
+  /* NESTED LINKS */
+
+  .nav-list-nested {
+    position: relative;
+    display: none;
+    list-style: none;
+    top: 0;
+    background: none;
+    box-shadow: none;
+    transition: none;
+    z-index: 1000;
+    margin-top: 2rem;
+    margin-left: 2rem;
+  }
+
+  .nav-list li:hover .nav-list-nested {
+    opacity: 1;
+    visibility: visible;
+  }
+
+  .nav-list li:nth-child(1) .nav-list-nested {
+    right: 0;
+    left: 0;
+  }
+  .nav-list li:nth-child(2) .nav-list-nested {
+    left: 0;
+  }
+
+  .nav-list li:hover .nav-list-nested,
+  .nav-list li:visited .nav-list-nested {
+    display: block;
+  }
+
+  .nav-list-nested li {
+    margin-bottom: 1.2rem;
+  }
+
+  .nav-link-nested:link,
+  .nav-link-nested:visited {
+    display: flex;
+
+    gap: 2rem;
+    align-items: flex-start;
+    letter-spacing: 0.6px;
+    font-size: 2rem;
+    /* padding: 0.8rem; */
+    white-space: nowrap;
+  }
 }
