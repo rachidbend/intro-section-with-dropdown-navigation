@@ -31,7 +31,7 @@ body {
   font-family: "Epilogue", sans-serif;
   font-weight: 500;
   background-color: var(--color-white);
-  overflow: hidden;
+  /* overflow: hidden; */
 }
 
 .container {
