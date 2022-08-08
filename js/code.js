@@ -3,11 +3,11 @@
 // nav-open
 
 const navBtnEl = document.querySelector(".btn-mobile-nav");
-const headerEl = document.querySelector(".header");
+const htmlEl = document.querySelector("html");
 
 navBtnEl.addEventListener("click", (e) => {
-  headerEl.classList.toggle("nav-open");
-  headerEl.classList.toggle("sticky");
+  htmlEl.classList.toggle("nav-open");
+  htmlEl.classList.toggle("sticky");
 });
 
 // nav-nested-open
